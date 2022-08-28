@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Kanit&family=Poppins:ital,wght@0,200;0,300;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+
+button {
+    outline: none;
+    
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.87rem 3.12rem 6.25rem 2.5rem auto;
+    height: 33rem;
+    border: 5px solid black;
+    border-radius: 30px;
+    width: 17.75rem;
+    row-gap: 0.6rem;
+    background: #535c68;
+}
+
+.notifications {
+    display: flex;
+    width: 100%;
+    gap: 0.7rem;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.sensor {
+    height: 0.3rem;
+    width: 30%;
+    background: #000;
+    border-radius: 34px;
+}
+
+.time {
+    width: 36%;
+}
+
+.icons {
+    width: 25%;
+}
+
+.time p {
+    width: 100%;
+}
+
+.cal_heading {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+}
+
+.cal_heading button {
+    background-color: #483ccd52;
+    padding: 0.6rem 0.3rem;
+    border-radius: 10px;
+    border: 1px solid #ffffff36;
+}
+
+.cal_heading button:hover {
+    cursor: pointer;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+.result input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.8rem;
+    outline: none;
+    border: 2px solid rgb(183 145 54 / 71%);
+    border-radius: 5px;
+    background: #14233e7a;
+    display: flex;
+    padding: 0 0.9rem;
+    justify-content: end;
+    align-items: center;
+    overflow: auto;
+}
+
+.calculations {
+    border: 1.5px solid #ffffff59;
+    border-radius: 10px;
+    display: flex;
+    padding: 0 0.9rem;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+#sin {
+    padding: 0.438rem;
+}
+
+.simple_buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.7rem;
+    padding-top: 0.6rem;
+    width: 100%;
+    transition: 0.5 ease linear;
+}
+
+.simple_buttons button {
+    background: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5em;
+    box-shadow: 0px 1px 4px 0px rgba(211, 191, 191, 0.2);
+}
+
+.operator {
+    background: orange !important;
+}
+
+.simple_buttons button:hover {
+    background: white;
+    color: #535c68;
+    transform: scale(1.3);
+    transition: transform .2s ease;
+}
+
+.b1 {
+    grid-column: 1/3;
+    background-color: #130f40;
+    border-radius: 30px;
+    box-shadow: 0px 1px 4px 0px rgba(211, 191, 191, 0.2);
+    color: white;
+}
+
+.clear {
+    grid-column: 2/4;
+}
+
+.b2 {
+    grid-column: 3/5;
+    background-color: #130f40;
+    border-radius: 30px;
+    box-shadow: 0px 1px 4px 0px rgba(211, 191, 191, 0.2);
+}
+
+.b1:hover {
+    color: #130f40;
+    background-color: white;
+}
+
+.b2:hover {
+    color: #130f40;
+}
+
+.plus {
+    grid-row: 4/6;
+    grid-column: -3/-2;
+}
+
+.equal {
+    grid-column: 5/6;
+}
+
+.flex_box {
+    display: flex;
+}
+
+.scientific {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.7em;
+    display: none;
+    width: 100%;
+
+}
+
+.scientific button {
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 4px 0px rgba(211, 191, 191, 0.2);
+    background: #00968833;
+}
+
+.scientific button:hover {
+    background: white;
+    color: #535c68;
+    transform: scale(1.2);
+    transition: transform .2s ease;
+}
+
+.expand {
+    grid-column: 1/3;
+}
+
+.expand3 {
+    grid-column: 3/5
+}
+
+.x {
+    position: relative;
+    color: white;
+}
+
+.x span:hover {
+    color: #535c68;
+
+}
+
+.x2 span:hover {
+    color: #535c68;
+}
+
+.y {
+    position: absolute;
+    top: -.25rem;
+    font-size: 1rem;
+}
+
+
+.x2 {
+    position: relative;
+}
+
+.y2 {
+    position: absolute;
+    font-size: 1rem;
+    top: -0.138rem;
+
+}
+
+.orangeColor {
+    background: orange;
+}

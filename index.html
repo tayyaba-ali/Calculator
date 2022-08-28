@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assests/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+        <div class="notifications">
+            <div class="time">
+                <p id="time"></p>
+            </div>
+            <div class="sensor">
+            </div>
+            <div class="icons">
+                <i class="fa fa-signal" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-battery" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="cal_heading">
+            <button id="scientific">Simple Calculator</button>
+            <button id="simple">Scientific Calculator</button>
+        </div>
+        <!-- OUTPUT  -->
+        <div class="result">
+            <input type="text" id="resultShow">
+        </div>
+        <div class="calculations">
+        </div>
+        <div class="flex_box">
+            <!-- Simple Calculator  -->
+            <div class="simple_buttons">
+                <button class="b1 btn">(</button>
+                <button class="b2 btn">)</button>
+                <button class="operator" onclick="del()">&larr;</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="operator btn">-</button>
+                <button class="operator btn">÷</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="plus operator btn">+</button>
+                <button class=" btn operator">×</button>
+                <button class=" btn operator">.</button>
+                <button class="btn">3</button>
+                <button class="btn">2</button>
+                <button class="btn">1</button>
+                <button class="operator btn">%</button>
+                <button class="operator btn">0</button>
+                <button onclick="valueClear()" class="clear operator">C</button>
+                <button class="equal operator" onclick="output()">=</button>
+
+                <!-- End  -->
+            </div>
+
+
+            <!-- Scientific Calculator  -->
+            <div class="scientific">
+                <button class="b1 operator" id="square">√</button>
+                <button class="x b2 operator" id="power"><span>x</span><span class="y">2</span></button>
+                <button class="operator arrow" onclick="del()">&larr;</button>
+                <button class="expand" id="log">log</button>
+                <button id="cos">cos</button>
+                <button id="tan">tan</button>
+                <button class="operator" id="sin">sin</button>
+                <button id="pi">π</button>
+                <button id="exp">e</button>
+                <button id="rad">rad</button>
+                <button id="cube" class="x2 opeartor"><span>x</span>
+                    <span class="y2">3</span></button>
+                <button id="fact" class="operator">x &#33;</button>
+                <button id="half" class="operator">&frac12;</button>
+                <button class="operator btn">.</button>
+                <button onclick="valueClear()" class="expand3 operator">C</button>
+                <button class="equal operator operator" onclick="output()">=</button>
+                <!-- End  -->
+            </div>
+        </div>
+    </div>
+    <script src="./Assests/JS/app.js"></script>
+</body>
+
+</html>
